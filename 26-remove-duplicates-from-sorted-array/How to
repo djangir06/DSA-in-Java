@@ -1,0 +1,6 @@
+HOW YOU WILL DO
+
+start by taking two pointer l and i at positon 1. (because first number is always unique)
+compare each positon if i from i-1.
+if not same set l = that number and increment it.
+
