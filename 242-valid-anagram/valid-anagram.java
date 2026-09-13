@@ -1,0 +1,27 @@
+class Solution {
+    public boolean isAnagram(String s, String t) {
+        s = s.toLowerCase();
+        t = t.toLowerCase();
+
+        if(s.length()==t.length()){
+            char []s1 = s.toCharArray();
+            char []s2 = t.toCharArray();
+
+            Arrays.sort(s1);
+            Arrays.sort(s2);
+
+            boolean result = Arrays.equals(s1,s2);
+
+            if(result){
+                return true;
+            }
+        }else{
+            return false;
+        }
+
+        return false;
+        
+
+
+    }
+}
